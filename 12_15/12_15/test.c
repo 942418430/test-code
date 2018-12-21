@@ -82,24 +82,31 @@
 //}
 
 
+//int main()
+//{
+//	int c;
+//	FILE* pf = fopen("test.txt", "r");
+//	while ((c = fgetc(pf)) != EOF)
+//	{
+//		putchar(c);
+//	}
+//	if (ferror(pf))
+//	{
+//		puts("I/O error when reading");
+//	}
+//	else if (feof(pf))
+//	{
+//		puts("end of file reached successfully");
+//	}
+//	fclose(pf);
+//	pf = NULL;
+//	system("pause");
+//	return 0;
+//}
+
 int main()
 {
-	int c;
-	FILE* pf = fopen("test.txt", "r");
-	while ((c = fgetc(pf)) != EOF)
-	{
-		putchar(c);
-	}
-	if (ferror(pf))
-	{
-		puts("I/O error when reading");
-	}
-	else if (feof(pf))
-	{
-		puts("end of file reached successfully");
-	}
-	fclose(pf);
-	pf = NULL;
+	printf("%d\n", '1' - '0');
 	system("pause");
 	return 0;
 }
